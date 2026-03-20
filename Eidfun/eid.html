@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salami Diben Koto?</title>
+    <link rel="stylesheet" href="eid.css">
+</head>
+<body>
+
+<h1>Salami Diben Koto?</h1>
+<p>Spin the wheel to claim your Eid Salami! 💸</p>
+
+<div class="wheel-container">
+    <div class="pointer"></div>
+
+    <svg viewBox="-100 -100 200 200" class="wheel" id="wheel">
+        <g>
+            <path d="M0,0 L0,-100 A100,100 0 0,1 86.6,-50 Z" fill="#808080"/>
+            <path d="M0,0 L86.6,-50 A100,100 0 0,1 86.6,50 Z" fill="#FF5733"/>
+            <path d="M0,0 L86.6,50 A100,100 0 0,1 0,100 Z" fill="#33FF57"/>
+            <path d="M0,0 L0,100 A100,100 0 0,1 -86.6,50 Z" fill="#3357FF"/>
+            <path d="M0,0 L-86.6,50 A100,100 0 0,1 -86.6,-50 Z" fill="#FF33A8"/>
+            <path d="M0,0 L-86.6,-50 A100,100 0 0,1 0,-100 Z" fill="#33FFF6"/>
+        </g>
+
+        <g font-size="14" font-weight="bold" fill="white" text-anchor="middle">
+            <text transform="rotate(30) translate(0, -70)">Dua</text>
+            <text transform="rotate(90) translate(0, -70)">2 tk</text>
+            <text transform="rotate(150) translate(0, -70)">5 tk</text>
+            <text transform="rotate(210) translate(0, -70)">10 tk</text>
+            <text transform="rotate(270) translate(0, -70)">50 tk</text>
+            <text transform="rotate(330) translate(0, -70)">100 tk</text>
+        </g>
+    </svg>
+</div>
+
+<button id="spinBtn">SPIN NOW!</button>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <h2>Alhamdulillah 🤲</h2>
+        <p>Unlimited Dua!</p>
+        <iframe id="videoFrame" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script src="eid.js"></script>
+</body>
+</html>

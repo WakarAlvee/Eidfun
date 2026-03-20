@@ -22,7 +22,7 @@ btn.onclick = () => {
         document.getElementById("modal").style.display = "flex";
         document.getElementById("videoFrame").src =
             "https://www.youtube.com/embed/S5Z_lX6nL-I?autoplay=1 ";
-    }, 2000);
+    }, 4500);
 };
 
 function closeModal() {
